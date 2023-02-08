@@ -143,7 +143,7 @@ class _CollectPageState extends State<CollectPage> {
               style: FMTextStyle.color_333333_size_42,
             ),
             actions: <Widget>[
-              FlatButton(
+              MaterialButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },
@@ -151,7 +151,7 @@ class _CollectPageState extends State<CollectPage> {
                     AppStrings.CANCEL,
                     style: FMTextStyle.color_999999_size_42,
                   )),
-              FlatButton(
+              MaterialButton(
                   onPressed: () {
                     Navigator.pop(context);
                     //_cancelCollect(collect.valueId, index);

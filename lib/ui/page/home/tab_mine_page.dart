@@ -341,7 +341,7 @@ class _TabMinePageState extends State<TabMinePage> {
     return SizedBox(
         width: double.infinity,
         height: ScreenUtil().setHeight(AppDimens.DIMENS_120),
-        child: RaisedButton(
+        child: MaterialButton(
           shape: RoundedRectangleBorder(
               borderRadius:
                   BorderRadius.all(Radius.circular(AppDimens.DIMENS_30))),
@@ -366,13 +366,13 @@ class _TabMinePageState extends State<TabMinePage> {
             content: Text(AppStrings.CONFIRM_LOGOUT,
                 style: FMTextStyle.color_333333_size_48),
             actions: [
-              FlatButton(
+              MaterialButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },
                   child: Text(AppStrings.CANCEL,
                       style: FMTextStyle.color_999999_size_42)),
-              FlatButton(
+              MaterialButton(
                   onPressed: () {
                     SharedPreferencesUtil.getInstance().clear().then((value) {
                       print(value);

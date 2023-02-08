@@ -115,7 +115,7 @@ class _GoodsDetailPageState extends State<GoodsDetailPage> {
                   margin: EdgeInsets.only(
                       left: ScreenUtil().setWidth(AppDimens.DIMENS_30),
                       right: ScreenUtil().setWidth(AppDimens.DIMENS_30)),
-                  child: FlatButton(
+                  child: MaterialButton(
                     padding: EdgeInsets.all(AppDimens.DIMENS_10),
                     color: AppColors.COLOR_FF5722,
                     shape: RoundedRectangleBorder(
@@ -135,7 +135,7 @@ class _GoodsDetailPageState extends State<GoodsDetailPage> {
                 child: Container(
                     margin: EdgeInsets.only(
                         right: ScreenUtil().setWidth(AppDimens.DIMENS_30)),
-                    child: FlatButton(
+                    child: MaterialButton(
                       padding: EdgeInsets.all(AppDimens.DIMENS_10),
                       color: AppColors.COLOR_FFB24E,
                       shape: RoundedRectangleBorder(
@@ -441,7 +441,7 @@ class _GoodsDetailPageState extends State<GoodsDetailPage> {
                     child: SizedBox(
                       height: ScreenUtil().setHeight(AppDimens.DIMENS_120),
                       width: double.infinity,
-                      child: RaisedButton(
+                      child: MaterialButton(
                         color: showType == 1
                             ? AppColors.COLOR_FF5722
                             : AppColors.COLOR_FFB24E,

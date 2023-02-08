@@ -102,7 +102,7 @@ class LoginPage extends StatelessWidget {
                     SizedBox(
                       width: double.infinity,
                       height: ScreenUtil().setHeight(AppDimens.DIMENS_120),
-                      child: RaisedButton(
+                      child: MaterialButton(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.all(
                                 Radius.circular(AppDimens.DIMENS_30))),

@@ -33,7 +33,7 @@ class _GuidePageState extends State<GuidePage> {
                 child: Offstage(
                   offstage: !_showButton,
                   child: Center(
-                      child: FlatButton(
+                      child: MaterialButton(
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(AppDimens.DIMENS_30))),
                     color: AppColors.COLOR_FF5722,
                     textColor: AppColors.COLOR_FFFFFF,

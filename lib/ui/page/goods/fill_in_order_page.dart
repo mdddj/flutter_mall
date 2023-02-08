@@ -78,7 +78,7 @@ class _FillInOrderPageState extends State<FillInOrderPage> {
                   alignment: Alignment.center,
                   width: ScreenUtil().setWidth(AppDimens.DIMENS_300),
                   height: double.infinity,
-                  child: RaisedButton(
+                  child: MaterialButton(
                     color: AppColors.COLOR_FF5722,
                     onPressed:() => _submitOrder(),
                     shape: RoundedRectangleBorder(
@@ -353,7 +353,6 @@ class _FillInOrderPageState extends State<FillInOrderPage> {
                 hintText: AppStrings.REMARK_HINT,
                 border: OutlineInputBorder(borderSide: BorderSide.none),
                 hintStyle:FMTextStyle.color_999999_size_42,
-                hasFloatingPlaceholder: false,
                 focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(
                         color: Colors.white,

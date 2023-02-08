@@ -75,19 +75,19 @@ class _HomePageState extends State<HomePage> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            title: Text(AppStrings.HOME),
+            label: AppStrings.HOME
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.category),
-            title: Text(AppStrings.CATEGORY),
+            label: AppStrings.CATEGORY
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_cart),
-            title: Text(AppStrings.SHOP_CAR),
+            label: AppStrings.SHOP_CAR
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            title: Text(AppStrings.MINE),
+            label: AppStrings.MINE
           ),
         ],
         currentIndex: _selectedIndex,

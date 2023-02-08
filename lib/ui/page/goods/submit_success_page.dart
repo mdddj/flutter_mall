@@ -46,7 +46,7 @@ class SubmitSuccessPage extends StatelessWidget {
                         margin: EdgeInsets.only(
                             left: ScreenUtil().setWidth(AppDimens.DIMENS_30),
                             right: ScreenUtil().setWidth(AppDimens.DIMENS_20)),
-                        child: RaisedButton(
+                        child: MaterialButton(
                           splashColor: AppColors.COLOR_FFFFFF,
                           highlightColor: AppColors.COLOR_FFFFFF,
                           highlightElevation: 0,
@@ -68,7 +68,7 @@ class SubmitSuccessPage extends StatelessWidget {
                         margin: EdgeInsets.only(
                             left: ScreenUtil().setWidth(AppDimens.DIMENS_30),
                             right: ScreenUtil().setWidth(AppDimens.DIMENS_20)),
-                        child: RaisedButton(
+                        child: MaterialButton(
                           splashColor: AppColors.COLOR_FFFFFF,
                           highlightColor: AppColors.COLOR_FFFFFF,
                           highlightElevation: 0,

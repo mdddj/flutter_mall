@@ -15,9 +15,7 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     ScreenUtil.init(context,
-        width: AppDimens.MAX_WIDTH,
-        height: AppDimens.MAX_HEIGHT,
-        allowFontScaling: false);
+        designSize: Size(AppDimens.MAX_WIDTH, AppDimens.MAX_HEIGHT));
     return Provider.of<UserViewModel>(context).isFirst
         ? GuidePage()
         : HomePage();

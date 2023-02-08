@@ -68,7 +68,7 @@ class _FootPrintPageState extends State<FootPrintPage> {
                     left: ScreenUtil().setWidth(AppDimens.DIMENS_30),
                     right: ScreenUtil().setWidth(AppDimens.DIMENS_30)),
                 height: ScreenUtil().setHeight(AppDimens.DIMENS_150),
-                child: RaisedButton(
+                child: MaterialButton(
                   color: AppColors.COLOR_FF5722,
                   onPressed: () => _deleteFootPrint(),
                   shape: RoundedRectangleBorder(

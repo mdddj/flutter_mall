@@ -25,7 +25,7 @@ apply plugin: 'com.android.application'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 33
 
     lintOptions {
         disable 'InvalidPackage'
@@ -34,21 +34,21 @@ android {
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.example.mall"
-        minSdkVersion 16
-        targetSdkVersion 28
+        minSdkVersion 19
+        targetSdkVersion 33
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-    Properties props = new Properties()
-    props.load(new FileInputStream(file("../signing.properties")))
+//    Properties props = new Properties()
+//    props.load(new FileInputStream(file("../signing.properties")))
     signingConfigs {
-        release {
-            storeFile file(props['KEYSTORE_FILE'])
-            storePassword props['KEYSTORE_PASSWORD']
-            keyAlias props['KEY_ALIAS']
-            keyPassword props['KEY_PASSWORD']
-        }
+//        release {
+//            storeFile file(props['KEYSTORE_FILE'])
+//            storePassword props['KEYSTORE_PASSWORD']
+//            keyAlias props['KEY_ALIAS']
+//            keyPassword props['KEY_PASSWORD']
+//        }
     }
     buildTypes {
         release {
@@ -64,7 +64,7 @@ flutter {
 }
 
 dependencies {
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }

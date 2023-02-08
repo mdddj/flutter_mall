@@ -321,7 +321,7 @@ class _AddressDetailPageState extends State<AddressDetailPage> {
             left: ScreenUtil().setWidth(AppDimens.DIMENS_30),
             right: ScreenUtil().setWidth(AppDimens.DIMENS_30)),
         width: double.infinity,
-        child: RaisedButton(
+        child: MaterialButton(
           onPressed: () => _submit(addressViewModel),
           color: AppColors.COLOR_FF5722,
           shape: RoundedRectangleBorder(
@@ -408,7 +408,7 @@ class _AddressDetailPageState extends State<AddressDetailPage> {
               style: FMTextStyle.color_333333_size_42,
             ),
             actions: <Widget>[
-              FlatButton(
+              MaterialButton(
                 color: AppColors.COLOR_FFFFFF,
                 onPressed: () {
                   Navigator.pop(context);
@@ -418,7 +418,7 @@ class _AddressDetailPageState extends State<AddressDetailPage> {
                   style: FMTextStyle.color_ff5722_size_42,
                 ),
               ),
-              FlatButton(
+              MaterialButton(
                 color: AppColors.COLOR_FFFFFF,
                 onPressed: () {
                   Navigator.pop(context);

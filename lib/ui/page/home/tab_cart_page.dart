@@ -73,7 +73,7 @@ class _TabCartPageState extends State<TabCartPage> {
                   margin: EdgeInsets.only(
                       right: ScreenUtil().setWidth(AppDimens.DIMENS_30)),
                   alignment: Alignment.centerRight,
-                  child: RaisedButton(
+                  child: MaterialButton(
                     onPressed: () {
                       NavigatorUtil.goFillInOrder(context, 0);
                     },
@@ -142,8 +142,6 @@ class _TabCartPageState extends State<TabCartPage> {
       width: double.infinity,
       child: Card(
         child: Slidable(
-            actionPane: SlidableScrollActionPane(),
-            actionExtentRatio: 0.25,
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
@@ -202,15 +200,15 @@ class _TabCartPageState extends State<TabCartPage> {
                 )
               ],
             ),
-            secondaryActions: <Widget>[
-              IconSlideAction(
-                caption: AppStrings.DELETE,
-                color: AppColors.COLOR_FF5722,
-                icon: Icons.delete,
-                closeOnTap: false,
-                onTap: () => _deleteDialog(cartBean.productId, index),
-              ),
-            ]),
+            // endActionPane: ActionPane(motion: motion, children: [
+              // IconSlideAction(
+              //   caption: AppStrings.DELETE,
+              //   color: AppColors.COLOR_FF5722,
+              //   icon: Icons.delete,
+              //   closeOnTap: false,
+              //   onTap: () => _deleteDialog(cartBean.productId, index),
+              // )
+            ),
       ),
     );
   }
@@ -224,14 +222,14 @@ class _TabCartPageState extends State<TabCartPage> {
             title: Text(AppStrings.TIPS),
             content: Text(AppStrings.DELETE_CART_ITEM_TIPS),
             actions: <Widget>[
-              FlatButton(
+              MaterialButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },
                 child: Text(AppStrings.CANCEL,
                     style: FMTextStyle.color_999999_size_42),
               ),
-              FlatButton(
+              MaterialButton(
                 onPressed: () {
                   _deleteCartItem(productId, index);
                 },
